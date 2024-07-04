@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="railwayticket.css">
+  </head>
+  <body>
+    <h1>Railway Ticket Booking</h1>
+    <form id="booking-form">
+      <label for="train-number">Train Number:</label>
+      <input type="text" id="train-number" name="train-number" required><br>
+      <label for="passenger-name">Passenger Name:</label>
+      <input type="text" id="passenger-name" name="passenger-name" required><br>
+      <div>
+        Gender : Male <input type="radio" name="myGender" id="gender"> Female <input type="radio" name="myGender" id="gender"> other <input type="radio" name="myGender" id="gender">
+    </div>
+      <label for="seat-type">Seat Type:</label>
+      <select id="seat-type" name="seat-type" required>
+        <option value="first-class">First Class</option>
+        <option value="second-class">Second Class</option>
+        <option value="third-class">Third Class</option>
+      </select><br>
+      <button type="submit">Book Ticket</button>
+      <input type="reset" value="reset now">
+    </form>
+    <div id="ticket-info"></div>
+    <script src="railwayticket.js"></script>
+  </body>
+</html>
